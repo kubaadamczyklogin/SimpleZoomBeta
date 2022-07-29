@@ -1,0 +1,42 @@
+div.plugin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  width: 300px;
+  height: 230px;
+  border: 2px solid blue;
+  overflow: hidden;
+  position: relative;
+}
+
+div.plugin-container img {
+  box-sizing: border-box;
+  border: 1px solid red;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+div.plugin-container .controlls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+div.plugin-container .controlls > div {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid blue;
+  cursor: pointer;
+}
+
+div.plugin-container .smallest .controlls .zoomOut {
+  opacity: 0.3;
+}
+
+div.plugin-container .biggest .controlls .zoomIn {
+  opacity: 0.3;
+}
